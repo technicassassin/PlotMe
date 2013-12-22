@@ -50,8 +50,8 @@ public class PlotPopulator extends BlockPopulator {
 		int cx = chunk.getX();
 		int cz = chunk.getZ();
 		
-		int xx = cx << 4;
-		int zz = cz << 4;
+		int xx = (cx << 4) - 64;
+		int zz = (cz << 4) - 64;
 						
 		double size = plotsize + pathsize;
 		int valx;
